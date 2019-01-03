@@ -1,11 +1,11 @@
-ï»¿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TankMove : MonoBehaviour {
 
-	public float mSpeed = 1;//ç§»å‹•é€Ÿåº¦
-	public float rSpeed = 1;//æ—‹è½‰é€Ÿåº¦
-
+	public float mSpeed = 1;//²¾°Ê³t«×
+	public float rSpeed = 1;//±ÛÂà³t«×
+	public float mDevelop = 1;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,10 +13,10 @@ public class TankMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		var h = Input.GetAxis("Horizontal");//ç²å–æ°´å¹³è»¸å‘æŒ‰éµ
-		var v = Input.GetAxis("Vertical");//ç²å–å‚ç›´è»¸å‘æŒ‰éµ
+		var h = Input.GetAxis("Horizontal");//Àò¨ú¤ô¥­¶b¦V«öÁä
+		var v = Input.GetAxis("Vertical");//Àò¨ú««ª½¶b¦V«öÁä
 		
-		transform.Translate(0,0,mSpeed * -v);//æ ¹æ“šæ°´å¹³è»¸å‘æŒ‰éµä¾†å‰é€²æˆ–å¾Œé€€
-		transform.Rotate(0,rSpeed * h,0);//æ ¹æ“šå‚ç›´è»¸å‘æŒ‰éµä¾†æ—‹è½‰
+		transform.Translate(0,0,mSpeed * -v);//®Ú¾Ú¤ô¥­¶b¦V«öÁä¨Ó«e¶i©Î«á°h
+		transform.Rotate(0,rSpeed * h,0);//®Ú¾Ú««ª½¶b¦V«öÁä¨Ó±ÛÂà
 	}
 }
